@@ -37,9 +37,9 @@ bot(
       } catch {}
 
       return;
-    }
+    } 
 
-    // Resolve target JID (argument or saved default)
+    // Resolvee target JID (argument or saved default)
     const vars = await getVars(message.id);
     const targetJid = parsedJid(match)[0] || vars["VV_JID"];
     if (!targetJid) {
